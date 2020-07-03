@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import '../App.css';
 import { DISHES } from '../shared/dishesh';
 import DishDetailComponent from './DishDetailComponent';
+import Footer from './FooterComponent';
+import Header from './HeaderComponent';
 import Menu from './MenuComponent';
+
 
 class Main extends Component
 {
@@ -24,18 +26,16 @@ class Main extends Component
 render(){
   return (
     <div>
-      <Navbar dark color = "primary">
-        <div className="container">
-          <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>   
-        </div>
-      </Navbar>
 
+      <Header />
       <Menu dishes={this.state.dishes} 
             onClick={(dishId) => this.onDishSelect(dishId)}
       />
       <DishDetailComponent
          selectedDish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish )[0]}
      />
+
+     <Footer />
     </div>
     
   );
