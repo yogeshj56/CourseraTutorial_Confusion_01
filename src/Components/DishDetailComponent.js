@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
+import CommentForm from './CommentForm';
 
 function RenderComments(props){
         
@@ -21,7 +22,10 @@ function RenderComments(props){
                 <ul className = "list-unstyled">
                     {comment}
                 </ul>
+                
+                <CommentForm/>
                 </div>
+                
             )
             
         }else{

@@ -3,7 +3,6 @@ import { Control, Errors, LocalForm } from 'react-redux-form';
 import { Link } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, Button, Col, Label, Row } from 'reactstrap';
 
-
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
@@ -168,7 +167,7 @@ class Contact extends Component  {
                                             {''}
                                             <strong>May we contact you?</strong>
                                         </Label>
-                                        </div>
+                                    </div>
                                 </Col>
                                 <Col md={{size: 3, offset: 1}}>
                                     <Control.select model=".contactType" name="contactType"

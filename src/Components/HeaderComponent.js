@@ -4,7 +4,8 @@ import {
     Button, Collapse,
     Form, FormGroup,
     Input, Jumbotron,
-    Label, Modal, ModalBody, ModalHeader, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem
+    Label, Modal, ModalBody, ModalHeader, Nav, Navbar,
+    NavbarBrand, NavbarToggler, NavItem
 } from 'reactstrap';
 
 class Header extends Component{
